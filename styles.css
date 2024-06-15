@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+  font-family: helvetica,"Noto Sans JP";
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  text-decoration:none;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  color: rgb(62, 62, 62);
+}
+
+.header{width:70%;  
+height:60px;
+ background:#fafafa;
+text-align:center;
+margin:auto;
+border-radius:10px;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.35);
+        line-height:60px;
+}
+
+#headmoji{font-size:20px;
+  font-weight: bold;
+  color: rgb(62, 62, 62);
+}
+
+
+.search-container {
+  background:#fafafa;
+  text-align:center;
+  margin:auto;
+  border-radius:10px;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.35);
+  margin: auto;
+  width:40%;  
+}
+
+#search-form {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#search-input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  outline: none;
+  text-align:left;
+}
+
+.search {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search:hover {
+  background-color: #357ae8;
+  transition: 0.2s;
+}
+
+.content{
+  width:70%;  
+height:200px;
+ background:#fafafa;
+text-align:center;
+border-radius:10px;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.35);
+        line-height: 10px;        
+}
+
+.content-c{
+  width: 40%;
+  display: flex;
+  gap: 0px;
+  margin: auto;
+  justify-content: center; 
+}
+
+@media (max-width: 1045px) {
+
+  .content-c{
+    width: 70%;
+  }
+  .search-container {  width:70%;  }
+}
+
+@media (max-width: 600px) {
+
+  .content-c{ width: 80%;}
+  .search-container {  width:80%;  }
+  .header{width: 80%;}
+}
+
+@media (max-width: 540px) {
+
+  h1{ font-size: 20px;}
+  .forecast > h3 {  font-size: 15px;  }
+}
+
+#ClockArea{
+  line-height: 0px;        
+margin-top: 90px;
+}
+
+.icons{
+  display: flex;
+  width: 41%;
+  margin: auto;
+}
+
+.icon{
+  width:23%;  
+  height:90px;
+   background:#fafafa;
+  text-align:center;
+  border-radius:10px;
+    box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.35);
+    gap: 7px;
+    margin: auto;
+    justify-content: center; 
+margin-top: 50px;
+color: rgb(62, 62, 62);
+transition: 0.5s;
+
+}
+
+.icon:hover{
+  transition: 0.5s;
+  color: rgb(87, 87, 87);
+
+}
+
+@media (max-width: 900px) {
+
+.icons{
+  width: 81%;
+
+}
+}
