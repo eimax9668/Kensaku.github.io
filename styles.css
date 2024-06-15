@@ -94,9 +94,9 @@ border-radius:10px;
 
 @media (max-width: 600px) {
 
-  .content-c{ width: 80%;}
-  .search-container {  width:80%;  }
-  .header{width: 80%;}
+  .content-c{ width: 90%;}
+  .search-container {  width:90%;  }
+  .header{width: 90%;}
 }
 
 @media (max-width: 540px) {
@@ -141,7 +141,7 @@ transition: 0.5s;
 @media (max-width: 900px) {
 
 .icons{
-  width: 81%;
+  width: 90%;
 
 }
 }
