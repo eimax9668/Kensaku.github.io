@@ -124,7 +124,6 @@ transition: 0.5s;
 
 }
 
-
 .news{
   height:130px;
    background:#fafafa;
@@ -167,7 +166,6 @@ transition: 0.5s;
   height: 4px;
   background: #3e3e3e;
   border-radius: 20px;
-
 }
 
 .second {
@@ -198,7 +196,6 @@ margin: auto;}
 @media (max-width: 1045px) {
   .all{width:90%; }
   .search-container{width:90%; }
-
 }
 
 @media (max-width: 540px) {
@@ -209,25 +206,34 @@ margin: auto;}
 
 
 #news-container{
-  line-height:30px;
+  line-height:25px;
   overflow: scroll;
   text-decoration:none;
 font-size: 20px;
 text-align: left!important;
 left: 50px!important;
+padding-top: 15px;
+padding-bottom: 7px;
+
 }
 
 .news  a{
 color:#3e3e3e;
-transition: 0.5s;
+transition: 0.2s;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display: inline-block; /* 必要に応じて追加 */
+max-width: 100%;
 
 }
 
 .news  a::before{
-  content: '• ';
+  content: '◎ ';
+  padding-left: 10px;
   }
-
   .news  a:hover{
-   transition: 0.5s;
-   color:#616161;
+   transition: 0.2s;
+   color:#9c9c9c;
     }
+    .newstext{margin-top: 3px;}

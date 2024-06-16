@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = "";
         news.forEach(item => {
             const newsItem = document.createElement("div");
+            newsItem.classList.add("newstext");
             newsItem.innerHTML = `<a href="${item.link}" target="_blank" >${item.title}</a>`;
             container.appendChild(newsItem);
         });
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rssXML = await fetchRSS(rssUrl);
             let news = parseRSS(rssXML);
             const randomNews = [];
-            const newsCount = Math.min(5, news.length);
+            const newsCount = Math.min(10, news.length);
             while (randomNews.length < newsCount) {
                 const randomIndex = getRandomInt(news.length);
                 if (!randomNews.includes(news[randomIndex])) {
