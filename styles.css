@@ -7,13 +7,9 @@
   text-decoration:none;
 }
 
-body{
-  text-align: center;
-}
+body{text-align: center;}
 
-p,h1,h2,h3,h4,h5,h6{
-  color: #3e3e3e;
-}
+p,h1,h2,h3,h4,h5,h6,a{color: #3e3e3e;}
 
 .header{width:70%;  
 height:60px;
@@ -39,6 +35,7 @@ border-radius:10px;
   box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.35);
   margin: auto;
   width:40%;  
+  transition: 0.5s;
 }
 
 #search-form {
@@ -82,7 +79,6 @@ border-radius:10px;
 
 .content-c{
   width:100%;  
-
   display: flex;
   gap: 0px;
   margin: auto;
@@ -114,13 +110,13 @@ margin-top: 90px;
     justify-content: center; 
 margin-top: 50px;
 color: rgb(62, 62, 62);
-transition: 0.5s;
+transition: 0.3s;
 
 }
 
 .icon:hover{
-  transition: 0.5s;
-  color: rgb(87, 87, 87);
+  transition: 0.3s;
+  color: rgb(123, 123, 123);
 
 }
 
@@ -153,7 +149,7 @@ transition: 0.5s;
   left:10%;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: transform 2s cubic-bezier(0.1, 1, 0.3, 1);
+  transition: transform 2s cubic-bezier(0.1, 2, 0.35, 1);
 }
 
 .hour {
@@ -190,18 +186,20 @@ left: 7%;
 .all{
   max-width: 90%;
   width: 40%;
-margin: auto;}
+margin: auto;
+transition: 0.5s;
+}
 
 
 @media (max-width: 1045px) {
-  .all{width:90%; }
-  .search-container{width:90%; }
+  .all{width:90%; transition: 0.5s;}
+  .search-container{width:90%; transition: 0.5s;}
 }
 
 @media (max-width: 540px) {
 
-  h1{ font-size: 20px;}
-  .forecast > h3 {  font-size: 15px;  }
+  h1{ font-size: 20px;   transition: 0.2s;  }
+  .forecast > h3 {  font-size: 15px;    transition: 0.2s;  }
 }
 
 
@@ -237,3 +235,24 @@ max-width: 100%;
    color:#9c9c9c;
     }
     .newstext{margin-top: 3px;}
+
+    h1{transition: 0.2s;  }
+    .forecast > h3 {transition: 0.2s;  }
+
+    img{width: 100px;
+    height: 100px;}
+
+    .weatherDesc{
+      margin-top: -100px;
+    }
+
+    #changearea{
+      transition: 0.3s;
+    }
+
+    #changearea:hover{
+      transition: 0.3s;
+      color: #888888;
+    }
+
+    .forecast{margin-top: 25px;}

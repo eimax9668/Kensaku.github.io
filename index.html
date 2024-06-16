@@ -6,9 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="weather.js"></script>
-    <script src="time.js"></script>
-    <script src="rss.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +27,12 @@
   <div class="all">
 
   <div class="content-c">
-    <div id="weather-forecast" class="content">
+    <div class="content">
       <br>
-      <h1>東京の天気</h1>
+      <div style="display: flex;   justify-content: center;"> <h1 class="weather-area">東京</h1><h1>の天気</h1></div>
+      <a  href="#" id="changearea">場所を変更</a>
+      <div id="weather-forecast">      <p>読み込み中</p>
+      </div>
     </div>
     <div style="width: 30px;"></div>
     <div class="content" id="content-right">
@@ -66,7 +66,9 @@
     <br>
   </div>
     <div id="footer"></div>  
-
+    <script src="time.js"></script>
+    <script src="rss.js"></script>
+    <script src="weather.js"></script>
 </body>
 <script>
     fetch("footer.html")
