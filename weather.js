@@ -36,7 +36,19 @@ document.querySelector('#changearea').addEventListener("click", function(event){
     console.log(event)
     event.preventDefault();
     fetchdata();
+    disableClick();
 });
+
+function disableClick() {
+    const targetElement = document.getElementById('changearea');
+    targetElement.classList.add('disabled-click');
+    document.getElementById('changearea').innerHTML = "変更中...";
+
+    setTimeout(function() {
+        document.getElementById('changearea').innerHTML = "場所を変更";
+        targetElement.classList.remove('disabled-click');
+    }, 1000); 
+}
 
 function fetchdata() {
     console.log(index);

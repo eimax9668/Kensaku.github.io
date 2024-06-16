@@ -256,3 +256,8 @@ max-width: 100%;
     }
 
     .forecast{margin-top: 25px;}
+
+    .disabled-click {
+      pointer-events: none;
+      opacity: 0.5; 
+  }
