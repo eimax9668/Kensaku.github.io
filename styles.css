@@ -54,7 +54,7 @@ border-radius:10px;
 }
 
 .search {
-  background-color: #5a91e9;
+  background-color: #5b8ad4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -63,7 +63,7 @@ border-radius:10px;
 }
 
 .search:hover {
-  background-color: #5587d7;
+  background-color: rgb(73, 127, 214);
   transition: 0.2s;
 }
 
