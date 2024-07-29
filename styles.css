@@ -139,7 +139,7 @@ transition: 0.3s;
 
 .second {
   height: 6px;
-  background: #5b8ad4;
+  background:var(--main-black);
   border-radius: 20px;
   width: 43%;
 left: 7%;
@@ -240,8 +240,8 @@ max-width: 100%;
 .button,h2{font-family: "IBM Plex Mono";}
 
 hr{border: 1px solid var(--main-black);border-radius: 10px;}
- .menu > a{font-weight:400;}
-
+ .menu > a{font-weight:500; transition: 0.3s;}
+ .menu > a:hover{color: #3e3e3e6c; }
 .button,.button-stop{
   line-height: 70px;
   margin: auto;
