@@ -19,5 +19,5 @@ document.querySelector("#cleanthesea-stop").addEventListener("click",function(ev
 
 document.querySelector("#irairagame-stop").addEventListener("click",function(event){
     event.preventDefault();
-    document.querySelector("#irairagame").innerHTML = '<img class="gameimg" src="/gameimg/irairagame.png" />' ;
+    document.querySelector("#irairagame").innerHTML = '<img class="gameimg" src="/gameimg/IraIragame.png" />' ;
 })
