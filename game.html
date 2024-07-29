@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <title>AsoBeru</title>
+  <link rel="icon" href="icon/favicon.ico">
+  <link rel="icon" href="icon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon/apple-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="AsoBeruは、遊べるサイト。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+JP:wght@200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h2 style=" color:#616161; font-size:50px; margin-bottom: 30px;">AsoBeru</h2>
+  <div class="all">
+    <div class="menu">
+      <a href="index.html">Home</a><span> 　</span><a href="game.html">Play</a>
+      <span>　</span><a href="index.html">Home</a>
+    </div>
+    <br><!--くりーん-->
+    <div id="cleanthesea" class="game iframe-container ">
+      <img class="gameimg" src="/gameimg/cleanthesea.png" />
+    </div>
+    <br><br><div class="game-buttons">
+      <a  class="button" id="cleanthesea-play">Play</a>
+      <a  class="button-stop" id="cleanthesea-stop">Stop</a></div>
+    <br><hr><br><!--いらいら-->
+    <div id="irairagame" class="game">
+      <img class="gameimg" src="/gameimg/IraIragame.png" />
+    </div>
+    <br><br><div class="game-buttons">
+    <a  class="button" id="irairagame-play">Play</a>
+    <a href="#!" class="button-stop" id="irairagame-stop">Stop</a>
+    </div>
+
+
+  </div><!--ここはALLの終わり。-->
+
+  <script src="scripts/game.js"></script>
+</body>
+</html>

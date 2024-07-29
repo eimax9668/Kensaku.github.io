@@ -1,50 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+:root{
+  --main-black: #3e3e3e;
+  --shadow:0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
 
 *{
-  font-family: helvetica,"Noto Sans JP";
-  font-weight: 300;
+  font-family: "IBM Plex Mono","IBM Plex Sans JP";
+  font-weight: 200;
   font-style: normal;
   text-decoration:none;
 }
-
 body{text-align: center;}
-
-p,h1,h2,h3,h4,h5,h6,a{color: #3e3e3e;}
-
-.header{width:70%;  
-height:60px;
- background:#fafafa;
-text-align:center;
-margin:auto;
-border-radius:10px;
-  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
-        line-height:60px;
-}
-
+p,h1,h2,h3,h4,h5,h6,a{color: var(--main-black);}
 #headmoji{font-size:20px;
   font-weight: bold;
-  color: rgb(62, 62, 62);
+  color:var(--main-black);
 }
-
-
+/*ここからサーチ関係 ↓コンテナ*/
 .search-container {
   background:#fafafa;
   text-align:center;
   margin:auto;
   border-radius:10px;
-  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
   margin: auto;
   width:40%;  
   transition: 0.5s;
 }
-
 #search-form {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
-
 }
-
 #search-input {
   flex: 1;
   padding: 15px;
@@ -52,7 +39,6 @@ border-radius:10px;
   outline: none;
   text-align:left;
 }
-
 .search {
   background-color: #5b8ad4;
   color: white;
@@ -61,11 +47,11 @@ border-radius:10px;
   cursor: pointer;
   transition: 0.2s;
 }
-
 .search:hover {
-  background-color: rgb(73, 127, 214);
+  background-color: #497fd6;
   transition: 0.2s;
 }
+/*サーチ関係ここまで*/
 
 .content{
   width:100%;  
@@ -73,7 +59,7 @@ height:200px;
  background:#fafafa;
 text-align:center;
 border-radius:10px;
-  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--shadow);
         line-height: 10px;        
 }
 
@@ -85,14 +71,10 @@ border-radius:10px;
   justify-content: center; 
 }
 
-#ClockArea{
-  line-height: 0px;        
-margin-top: 90px;
-}
+#ClockArea{line-height: 0px; margin-top: 90px;}
 
 .icons{
   width:100%;  
-
   display: flex;
   margin: auto;
   gap:10px;
@@ -105,21 +87,16 @@ margin-top: 90px;
    background:#fafafa;
   text-align:center;
   border-radius:10px;
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow);
     gap: 7px;
     margin: auto;
     justify-content: center; 
 margin-top: 50px;
-color: rgb(62, 62, 62);
+color: var(--main-black);
 transition: 0.3s;
-
 }
 
-.icon:hover{
-  transition: 0.3s;
-  color: rgb(123, 123, 123);
-
-}
+.icon:hover{ transition: 0.3s; color: rgb(123, 123, 123);}
 
 .news{
   height:130px;
@@ -127,7 +104,7 @@ transition: 0.3s;
   text-align:center;
   margin:auto;
   border-radius:10px;
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow);
           line-height:60px;
 
   }
@@ -135,7 +112,7 @@ transition: 0.3s;
 .clock {
   width: 130px;
   height: 130px;
-  border: 4px solid #3e3e3e;
+  border: 3px solid var(--main-black);
   border-radius: 50%;
   position: relative;
   margin:auto;
@@ -144,7 +121,7 @@ transition: 0.3s;
 
 .hand {
   width: 40%;
-  background: #3e3e3e;
+  background: var(--main-black);
   position: absolute;
   top: 48%;
   left:10%;
@@ -155,13 +132,13 @@ transition: 0.3s;
 
 .hour {
   height: 5px;
-  background: #3e3e3e;
+  background: var(--main-black);
   border-radius: 20px;
 }
 
 .minute {
   height: 4px;
-  background: #3e3e3e;
+  background: var(--main-black);
   border-radius: 20px;
 }
 
@@ -176,7 +153,7 @@ left: 7%;
 .center-circle {
   width: 12px; /* 円の直径 */
   height: 12px; /* 円の直径 */
-  background: #3e3e3e;
+  background: var(--main-black);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -198,7 +175,6 @@ transition: 0.5s;
 }
 
 @media (max-width: 540px) {
-
   h1{ font-size: 20px;   transition: 0.2s;  }
   .forecast > h3 {  font-size: 15px;    transition: 0.2s;  }
 }
@@ -213,52 +189,121 @@ text-align: left!important;
 left: 50px!important;
 padding-top: 15px;
 padding-bottom: 7px;
-
 }
 
 .news  a{
-color:#3e3e3e;
+color:var(--main-black);
 transition: 0.2s;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
-display: inline-block; /* 必要に応じて追加 */
+display: inline-block;
 max-width: 100%;
-
 }
 
 .news  a::before{
-  content: '◎ ';
+  content: '• ';
   padding-left: 10px;
+  margin-top: 500px;
   }
-  .news  a:hover{
-   transition: 0.2s;
-   color:#9c9c9c;
-    }
+  .news  a:hover{transition: 0.2s;color:#9c9c9c;}
     .newstext{margin-top: 3px;}
-
     h1{transition: 0.2s;  }
     .forecast > h3 {transition: 0.2s;  }
+    img{width: 100px; height: 100px;}
+    .weatherDesc{ margin-top: -100px;}
+    #changearea{transition: 0.3s; }
 
-    img{width: 100px;
-    height: 100px;}
-
-    .weatherDesc{
-      margin-top: -100px;
-    }
-
-    #changearea{
-      transition: 0.3s;
-    }
-
-    #changearea:hover{
-      transition: 0.3s;
-      color: #888888;
-    }
+    #changearea:hover{  transition: 0.3s; color: #888888; }
 
     .forecast{margin-top: 25px;}
+    .disabled-click { pointer-events: none; opacity: 0.5;  }
 
-    .disabled-click {
-      pointer-events: none;
-      opacity: 0.5; 
+  .gameimg{
+    width: 469px;
+    height: 351px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: 0.5s;
+    box-sizing: content-box;
+    margin-bottom: 45px;
   }
+
+#indexplay{width: 100%; transition: 0.3s;}
+
+.menu{
+  font-family: monospace;
+  background:#ffffff;
+  text-align:center;
+  margin:auto;
+  border-radius:10px;
+  box-shadow: var(--shadow);
+  margin: auto;
+  transition: 0.5s;
+  display: block;
+  padding: 12px;
+}
+
+
+.button,h2{font-family: "IBM Plex Mono";}
+
+hr{border: 1px solid var(--main-black);border-radius: 10px;}
+ .menu > a{font-weight:400;}
+
+.button,.button-stop{
+  line-height: 70px;
+  margin: auto;
+  display: block;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+ .button{
+  background:#5b8ad4;
+  width: 70%;
+  height:70px;
+  color: #ffffff;
+  display:inline-block;
+  transition: 0.5s;
+}
+
+.button:hover{transition: 0.3s; background: #497fd6; }
+
+ .button-stop{
+  background:#d45b5b;
+  width: 30%;
+  height:70px;
+  color: #ffffff;
+}
+
+.button-stop:hover{transition: 0.3s; background: #d64949; }
+.game-buttons{display: flex; gap: 10px;}
+
+iframe {
+  max-width: 600px;
+  height: 351px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  transition: 0.7s;
+  margin-bottom: 40px; 
+}
+
+@media (max-width: 1300px) {
+iframe {
+  max-width: 350px;
+  height: 262px;
+  transition: 0.7s;
+}
+}
+@media (max-width: 1300px) {
+.gameimg{
+  width: 350px;
+  height: 262px;
+  transition: 0.5s;
+}}
